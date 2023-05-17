@@ -47,7 +47,7 @@ void Regulator::step(float sensorValue) {
 	calculateP();
 	calculateI();
 	calculateD();
-	float tempSignal = (kP * p + kI * i + kD * d) * signalIntervalLength / 2.0f;
+	float tempSignal = minSignal + (kP * p + kI * i + kD * d) * signalIntervalLength / 2.0f;
 	signal = std::min(std::max(minSignal, tempSignal), maxSignal);
 }
 
