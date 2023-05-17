@@ -14,9 +14,11 @@ class Regulator {
 public:
 	/*
 	—оздаЄт объект класса Regulator со следующими параметрами:
-	minSignal Ч минимальное значение сигнала
-	maxSignal Ч максимальное значение сигнала
-	desiredValue Ч желаемое значение регулируемой величины
+	minSignal Ч минимальное значение сигнала,
+	maxSignal Ч максимальное значение сигнала,
+	desiredValue Ч желаемое значение регулируемой величины,
+	minValue Ч минимальное значение регулируемой величины,
+	maxValue Ч максимальное значение регулируемой величины
 	*/
 	Regulator(float minSignal, float maxSignal, float desiredValue, float minValue, float maxValue);
 
